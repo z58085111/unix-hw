@@ -1,0 +1,16 @@
+I run a script to observe difference of speed between the two versions. The following is result:
+
+original version run 5000 times:
+
+real	0m34.895s
+user	0m4.704s
+sys	0m16.056s
+
+chdir version run 5000 times:
+
+real	0m25.228s
+user	0m4.160s
+sys	0m16.424s
+
+The experiment calculates average time of the two version by running 5000 times on home directory. respectively. Using chdir in ftw8 is faster than original ftw8.
+
